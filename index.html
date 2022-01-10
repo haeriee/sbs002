@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico"> 
+    <title>Z-index</title>
+
+    <style>
+        #wrapper {
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+            position: relative;
+        }
+
+        .box1 {
+            width: 120px;
+            height: 120px;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            background: red;
+            z-index: 3;
+        }
+
+        .box2 {
+            width: 120px;
+            height: 120px;
+            position: absolute;
+            top: 80px;
+            left: 80px;
+            background: green;
+            z-index: 2;
+        }
+
+        .box3 {
+            width: 120px;
+            height: 120px;
+            position: absolute;
+            top: 110px;
+            left: 110px;
+            background: blue;
+            z-index: 1;
+        }
+
+
+    </style>
+</head>
+
+<body> 
+    <div id="wrapper">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+    </div>
+    
+
+</body>
+</html>

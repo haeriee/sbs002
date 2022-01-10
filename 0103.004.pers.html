@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico"> 
+    <title>pers</title>
+    <style>
+        .rotatex ing {
+            transform: rotateX(50deg);
+        }
+
+        .rotatex {
+            perspective: 300px;
+            transform-origin: center;
+        }
+
+        /*#no-pers {
+            perspective: 300px;
+        }*/
+        
+        #pers {
+            perspective: 300px;
+        }
+
+        #no-pers #pers {
+            float: left;
+        }
+    
+      
+    </style>
+</head>
+
+<body>
+    <div id="no-pers">
+        <div class="rotatex">
+            <img src="송중기_00002.jpg" alt="">
+        </div>
+    </div>
+
+    <div id="pers">
+        <div class="rotatex">
+            <img src="송중기_00002.jpg" alt="">
+        </div>
+    </div>
+   
+</body>
+</html>
